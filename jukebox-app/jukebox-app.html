@@ -1,0 +1,28 @@
+<head>
+  <title>~ Jukebox ~</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Playlist</h1>
+    </header>
+
+    <ul>
+      {{#each songs}}
+        {{> song}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="song">
+  <li>
+		<p>
+		<h5>{{title}}</h5>
+		<p>
+			<iframe src="{{url}}"></iframe>
+		</p>
+		</p>
+	</li>
+</template>
