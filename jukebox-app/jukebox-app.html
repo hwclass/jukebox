@@ -6,23 +6,31 @@
   <div class="container">
     <header>
       <h1>Playlist</h1>
-    </header>
-
+    </header>	
     <ul>
-      {{#each songs}}
+      {{#each songList}}
         {{> song}}
       {{/each}}
     </ul>
+    <p>
+    	{{> formInsertSong}}
+    </p>
   </div>
 </body>
 
 <template name="song">
   <li>
 		<p>
-		<h5>{{title}}</h5>
-		<p>
-			<iframe src="{{url}}"></iframe>
-		</p>
+			<h5>{{title}}</h5>
+			<p>
+				<iframe src="{{url}}"></iframe>
+			</p>
 		</p>
 	</li>
+</template>
+
+<template name="formInsertSong">
+  <form class="new-song">
+    <input type="text" name="url" placeholder="Type to add new songs" />
+  </form>
 </template>
