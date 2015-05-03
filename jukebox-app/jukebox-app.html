@@ -6,31 +6,20 @@
   <div class="container">
     <header>
       <h1>Playlist</h1>
-    </header>	
-    <ul>
-      {{#each songList}}
+      <form class="new-song-form">
+        <input type="text" name="url" id="new-song-url" class="fl" placeholder="Type to add new songs" />
+        <input type="button" id="new-song-button" class="fl w100" value="Add"/>
+      </form>
+      <h5 class="ml10">(*Copyleft by <a href="https://github.com/livacengiz" target="_blank">Liva</a>)</h5>
+    </header>
+    <p>
+      {{#each songs}}
         {{> song}}
       {{/each}}
-    </ul>
-    <p>
-    	{{> formInsertSong}}
     </p>
   </div>
 </body>
 
 <template name="song">
-  <li>
-		<p>
-			<h5>{{title}}</h5>
-			<p>
-				<iframe src="{{url}}"></iframe>
-			</p>
-		</p>
-	</li>
-</template>
-
-<template name="formInsertSong">
-  <form class="new-song">
-    <input type="text" name="url" placeholder="Type to add new songs" />
-  </form>
+	<iframe class="song-video fl" width="100" height="100" src="//www.youtube.com/embed/{{url}}?rel=0" frameborder="0" allowfullscreen></iframe>
 </template>
