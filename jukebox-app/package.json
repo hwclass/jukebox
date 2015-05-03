@@ -1,0 +1,29 @@
+{
+  "name": "jukebox-app",
+  "version": "0.0.1",
+  "description": "A jukebox application to listen music during friend talks",
+  "main": "jukebox-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hwclass/jukebox"
+  },
+  "keywords": [
+    "music",
+    "jukebox",
+    "musicbox",
+    "friends",
+    "playlist"
+  ],
+  "author": "hwclass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hwclass/jukebox/issues"
+  },
+  "homepage": "https://github.com/hwclass/jukebox",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}

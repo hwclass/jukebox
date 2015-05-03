@@ -1,0 +1,26 @@
+{
+  "name": "jukebox",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hwclass/jukebox",
+  "authors": [
+    "hwclass <harderworking.class@gmail.com>"
+  ],
+  "description": "A jukebox application to listen music during friend talks",
+  "main": "jukebox-app.js",
+  "keywords": [
+    "music",
+    "jukebox",
+    "musicbox",
+    "friends",
+    "playlist"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

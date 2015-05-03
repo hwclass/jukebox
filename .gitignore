@@ -1,3 +1,4 @@
 .meteor/local
 .meteor/meteorit
 node_modules
+.jukebox-app/client/compatibility
