@@ -33,3 +33,8 @@ if (Meteor.isClient) {
   }
 
 }
+
+Meteor.startup(function () {
+  // var firstVideo = document.getElementsByTagName('iframe')[0];
+  console.dir('Loaded');
+});
