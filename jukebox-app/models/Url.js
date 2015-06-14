@@ -1,3 +1,4 @@
+'use strict';
 
 /**
 * Url is the model for song urls
